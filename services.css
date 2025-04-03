@@ -1,0 +1,166 @@
+#services{
+    
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+
+
+.header{
+    text-align: center;
+    padding: 10px 0;
+}
+.header h2{
+    color: #007bff;
+}
+.Services {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Individual boxes (Languages, Education, Projects) */
+#web {
+    width: 280px;
+    height: 220px;  
+    text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    background: url("/Assets/Web_design.jpg");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+}
+
+
+/* Hover effect - box expands */
+#web:hover {
+    height: 240px;  /* Expand height on hover */
+    transform: scale(1.05);
+}
+
+/* Images for Languages, Education, and Projects */
+#web img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#mobileApp {
+    width: 280px;
+    height: 220px;  /* Default height */
+    text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    background-image:url("Assets/backImage.jpg");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hover effect - box expands */
+#mobileApp:hover {
+    height: 240px;  /* Expand height on hover */
+    transform: scale(1.05);
+}
+#mobileApp img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#project {
+    width: 280px;
+    height: 220px;  /* Default height */
+    text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hover effect - box expands */
+#project:hover {
+    height: 240px;  /* Expand height on hover */
+    transform: scale(1.05);
+}
+
+#project img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    transition: transform 0.4s ease-in-out;
+}
+
+#colab {
+    width: 280px;
+    height: 220px;  /* Default height */
+    text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    background-image:url("Assets/githubColla.jpg");
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    color:#fff;
+}
+#colab p{
+    color: #fff;
+}
+
+/* Hover effect - box expands */
+#colab:hover {
+    height: 240px;  /* Expand height on hover */
+    transform: scale(1.05);
+}
+#colab img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+#colab h3{
+    color:#000;
+    font-weight: 700;
+}
+
+@media (max-width: 768){
+    #services{
+     min-width: none;
+    }
+    #web img {
+        
+        height: 100px;
+    }
+    #mobileApp img {
+       
+        height: 100px;
+    }
+    #project img {
+        
+        height: 100px;
+}
+#colab img{
+    height: 100px;
+}
+}
+
+

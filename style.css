@@ -1,0 +1,406 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;    
+    background:rgba(0, 0, 0, 0.2);
+    background-attachment: fixed; 
+    background-size: cover; 
+    scroll-behavior: smooth; 
+  }
+  
+ /* Navbar styles */
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(114, 112, 112, 0.7);
+    padding: 15px 30px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+
+  }
+  
+  
+ nav  .logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    
+  }
+
+
+/* Navbar links */
+nav .navlinks ul {
+    display: flex;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav .navlinks li {
+    margin: 0 20px;
+}
+
+nav .navlinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+nav .navlinks a:hover {
+    color: maroon;    
+    text-decoration: underline;
+    
+}
+
+/* 🔹 Sidebar for Small Screens */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Hidden Initially */
+  width: 250px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  /* border-bottom: 1px solid #444; */
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.sidebar ul li a:hover{
+color: rgb(13, 120, 219);
+}
+/* 🔹 Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 10px;
+}
+
+/* 🔹 Hamburger Menu Button */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* 🔹 Show Sidebar When Active */
+.sidebar.active {
+  right: 0;
+}
+
+
+
+/* Centering the home section */
+#home {  
+  min-height: 100%;  
+  text-align: center;
+  padding: 50px 20px;
+  /* margin-top: 20px; */
+  
+}
+
+/* Container styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  width: 100%;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+/* Profile Image */
+.image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;  
+  margin: 20px, auto;  
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Heading styles */
+.home-content h3 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #333;
+}
+
+.home-content h3 img {
+  width: 30px;
+  height: 30px;
+}
+
+.home-content h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Highlight color */
+.highlight {
+  color: maroon;
+  font-weight: bold;
+}
+
+/* Buttons container (Side by Side) */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.button-container a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Button styling */
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;  
+  border-radius: 10px;   
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.contact{
+  background: transparent;
+  border: 1px solid #000;  
+  color: #000;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.resume{
+  /* background-color:rgb(116, 112, 112); */
+  background-color: brown;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+
+.contact:hover{
+  background-color: brown;
+  /* background-color: maroon; */
+  color: #fff;
+  border: none;
+}
+
+.resume:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+  
+}
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+
+.footer .logo1 {
+  margin-bottom: 20px;
+}
+
+.footer  .logo {
+  width: 130px;
+  height: auto;
+  border-radius: 50%;
+  
+}
+
+.footer hr {
+  border: 1px solid #444;
+  margin: 20px 0;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #bbb;
+  
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer ul li a:hover {
+  color: #f4f4f4;
+}
+
+.copyRight {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  /* Navbar links */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  .navlinks {
+      display: none; /* Hide Main Navbar */
+  }
+
+  .hamburger {
+      display: block; /* Show Hamburger */
+      margin-left: 100px;
+  }
+
+  .sidebar ul {
+      display: flex;
+  }
+
+
+ /* Home Section */
+ #home {
+  padding: 30px 15px;
+}
+
+/* Centering the container */
+.home-container {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25%;
+}
+
+/* Profile Image */
+.image {
+  width: 120px;
+  height: 130px;
+  margin: 15px auto;
+}
+
+/* Adjust Heading Styles */
+.home-content h3 {
+  font-size: 1.5rem;
+  flex-direction: column; /* Stack text and emoji on small screens */
+  gap: 5px;
+}
+
+.home-content h3 img {
+  width: 25px;
+  height: 25px;
+}
+
+.home-content h2 {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+/* Adjust Button Container */
+.button-container {
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 15px;
+  width: 100%;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  justify-content: center;
+}
+
+button img {
+  width: 18px;
+  height: 18px;
+} 
+  /* Footer */
+  
+  .footer ul {
+    text-align: center;
+  }
+
+  .footer ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}

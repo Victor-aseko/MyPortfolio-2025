@@ -1,0 +1,222 @@
+
+#contact {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("/Assets/backgroundComp.jpg");
+    background-size: cover;
+   
+    
+    
+}
+
+/* Contact Section */
+.contactS {
+    max-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+}
+/* Contact Details */
+.contactS p {
+    font-size: 18px;    
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+    
+}
+
+.contactW {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;     
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+/* Contact Details Section */
+.contactW > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+h2, h3 {
+    color: maroon;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+/* Style for each contact item */
+.contactW p {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin: 5px 0; 
+}
+
+/* Ensuring text alignment */
+.contactW a, 
+.contactW p {
+    text-align: left;
+}
+
+/* Adjust icons to have a consistent size */
+.contactW img {
+    width: 20px; 
+    height: auto;
+    vertical-align: middle;
+    
+}
+
+
+/* Ensuring LinkedIn and GitHub links align properly */
+.links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Form Section */
+.form {
+    flex: 1; 
+  
+}
+
+/* Align Name and Email fields side by side */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Ensure inputs have equal width */
+ .input-row div {
+    flex: 1;
+}
+
+/* Style input fields for uniformity */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Style for the name and email fields to appear side by side */
+.input-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.input-row input {
+    flex: 1;
+    padding: 20px;
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+
+}
+
+/* Full width for the textarea */
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    margin-left: 20%;
+    margin-top: 10%;
+    
+  
+}
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 0px 10px #000;
+}
+.modal button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal button:hover {
+    background: #0056b3;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .contactW {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactW p {
+      justify-content: center;
+    }
+    .input-row {
+        flex-direction: column;
+    }
+    .form, .contactW > div {
+        width: 100%;
+        text-align: center;
+    }
+    .modal {
+        width: 60%;
+        height: 60%;   
+    }
+    .modal-content{
+        width: 200px;
+    }
+}
