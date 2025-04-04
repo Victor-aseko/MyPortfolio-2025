@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
    
   }
   
@@ -13,7 +14,7 @@
     background:rgba(0, 0, 0, 0.2);
     background-attachment: fixed; 
     background-size: cover; 
-    scroll-behavior: smooth; 
+    
   }
   
  /* Navbar styles */
@@ -66,6 +67,9 @@ nav .navlinks a:hover {
     text-decoration: underline;
     
 }
+nav .navlinks ul li a.active {
+  color: yellow;
+}
 
 /* 🔹 Sidebar for Small Screens */
 .sidebar {
@@ -100,7 +104,10 @@ nav .navlinks a:hover {
   display: block;
 }
 .sidebar ul li a:hover{
-color: rgb(13, 120, 219);
+color: maroon;
+}
+.sidebar ul li a.active{
+  color: yellow;
 }
 /* 🔹 Close Button */
 .close-btn {
@@ -347,7 +354,7 @@ button img {
 .home-container {
   width: 100%;
   padding: 15px;
-  margin-top: 25%;
+  margin-top: 28%;
 }
 
 /* Profile Image */
