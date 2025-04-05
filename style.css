@@ -62,8 +62,7 @@ nav .navlinks a {
     transition: 0.5s ease-in-out;
 }
 
-nav .navlinks a:hover {
-    color: maroon;    
+nav .navlinks a:hover {       
     text-decoration: underline;
     
 }
@@ -72,12 +71,7 @@ nav .navlinks ul li a.active {
 }
 
 
-#theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-left: 10px;
-}
+
 
 /* 🔹 Sidebar for Small Screens */
 .sidebar {
@@ -111,8 +105,11 @@ nav .navlinks ul li a.active {
   text-decoration: none;
   display: block;
 }
-.sidebar ul li a:hover{
-color: maroon;
+
+.sidebar ul li a:hover {
+  
+  text-decoration: underline;
+  
 }
 .sidebar ul li a.active{
   color: yellow;
@@ -167,8 +164,8 @@ color: maroon;
 
 /* Profile Image */
 .image {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;  
   margin: 20px, auto;  
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -316,7 +313,8 @@ button img {
 }
 
 .footer ul li a:hover {
-  color: #f4f4f4;
+  color: blue;
+  text-decoration: underline; 
 }
 
 .copyRight {

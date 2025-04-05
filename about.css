@@ -6,6 +6,7 @@
     padding: 50px 20px;    
     background: rgb(0, 0, 0);
     height: auto;
+    opacity: 0.8;
 }
 
 .container {
@@ -214,7 +215,8 @@
 #about p:last-child {
     font-size: 1.3rem;
     font-style: italic;
-    color: #333;
+    color: #fff;
+    opacity: 0.8;
 }
 
 

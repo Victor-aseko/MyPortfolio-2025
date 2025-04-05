@@ -2,11 +2,10 @@
 #contact {
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     box-sizing: border-box;
     background-image: url("/Assets/backgroundComp.jpg");
-    background-size: cover;
-   
+    background-size: cover;  
     
     
 }
@@ -19,6 +18,7 @@
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin: 10px auto;
+    
 }
 /* Contact Details */
 .contactS p {
